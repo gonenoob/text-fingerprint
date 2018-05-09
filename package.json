@@ -1,0 +1,11 @@
+{
+  "name": "text-fingerprint",
+  "version": "1.0.0",
+  "description": "against copy copywriting",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "junda.mao",
+  "license": "ISC"
+}
