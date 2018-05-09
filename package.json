@@ -1,6 +1,6 @@
 {
   "name": "text-fingerprint",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "against copy copywriting",
   "main": "index.js",
   "scripts": {
@@ -8,6 +8,10 @@
   },
   "author": "junda.mao(https://github.com/gonenoob)",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gonenoob/text-fingerprint"
+  },
   "keywords": [
     "fingerprint",
     "encrypt",
