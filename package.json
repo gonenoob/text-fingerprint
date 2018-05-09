@@ -1,11 +1,18 @@
 {
   "name": "text-fingerprint",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "against copy copywriting",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "junda.mao",
-  "license": "ISC"
+  "author": "junda.mao(https://github.com/gonenoob)",
+  "license": "ISC",
+  "keywords": [
+    "fingerprint",
+    "encrypt",
+    "decrypt",
+    "copy",
+    "copywriting"
+  ]
 }
