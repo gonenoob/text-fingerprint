@@ -1,15 +1,17 @@
+const isNumber = require('isNumber')
+
 function completion(n) {
   return '00000000'.slice(String(n).length) + n
 }
 
 function text2Binary(text) {
-  return text.split('').map(function(word) {
+  return text.split('').map(word=> {
     return completion(word.charCodeAt(0).toString(2))
   }).join(' ')
 }
 
 function encrypt2Zero(binary) {
-  return binary.split('').map(function(n) {
+  return '‍' + binary.split('').map(n => {
     const map = {
       '1': '​',
       '0': '‌'
@@ -19,7 +21,7 @@ function encrypt2Zero(binary) {
 }
 
 function decrypt2Binary(str) {
-  return str.split('').map(function(zero) {
+  return str.split('').map(zero => {
     if (zero === '​') {
       return '1'
     }
@@ -28,13 +30,17 @@ function decrypt2Binary(str) {
       return '0'
     }
 
-    return ' '
+    if (zero === '‍') {
+      return ' '
+    }
+
+    return zero
   }).join('')
 }
 
 function binary2Text(binary) {
-  return binary.split(' ').map(function(num) {
-    return String.fromCharCode(parseInt(num, 2))
+  return binary.split(' ').map(num => {
+    return isNumber(num) ? String.fromCharCode(parseInt(num, 2)) : num + ' '
   }).join('')
 }
 

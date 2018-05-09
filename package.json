@@ -1,6 +1,6 @@
 {
   "name": "text-fingerprint",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "against copy copywriting",
   "main": "index.js",
   "scripts": {
@@ -14,5 +14,8 @@
     "decrypt",
     "copy",
     "copywriting"
-  ]
+  ],
+  "dependencies": {
+    "isnumber": "^1.0.0"
+  }
 }
