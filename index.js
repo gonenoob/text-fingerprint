@@ -1,4 +1,4 @@
-const isNumber = require('isNumber')
+const isNumber = require('isnumber')
 
 function completion(n) {
   return '00000000'.slice(String(n).length) + n
